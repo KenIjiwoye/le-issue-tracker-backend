@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issues",
+  "info": {
+    "name": "Issue",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "issueName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "priority": {
+      "type": "string",
+      "required": false,
+      "default": "low"
+    },
+    "assignTo": {
+      "type": "string",
+      "required": false
+    },
+    "status": {
+      "type": "string",
+      "default": "open",
+      "required": true
+    },
+    "issueDate": {
+      "type": "datetime"
+    },
+    "issueUpdated": {
+      "type": "datetime"
+    },
+    "createdBy": {
+      "type": "string"
+    }
+  }
+}
