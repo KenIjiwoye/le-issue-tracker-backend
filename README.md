@@ -1,3 +1,5 @@
-# Strapi application
+# Link Empower Issue Tracker backend application
 
-A quick description of your strapi application
+## TODO
+
+Fill out README.
